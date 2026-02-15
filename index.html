@@ -1,0 +1,128 @@
+                      <!--        ---------n1---------           -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Counter</title>
+    <style>
+        body {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .counter {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ffffff;
+            border-radius: 6px;
+            padding: 4px;
+            box-shadow: 0 0 6px #ffffff;
+        }
+
+        .counter button {
+            width: 70px;
+            height: 60px;
+            font-size: 25px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        #count {
+            width: 70px;
+            text-align: center;
+            font-size: 30px;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="counter">
+    <button id="minus">-</button>
+    <div id="count">1</div>
+    <button id="plus">+</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
+-->
+
+
+
+                           <!--  ----------n2---------   -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin-top: 50px;
+            font-family: Arial;
+        }
+
+        form {
+            margin-bottom: 15px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm" autocomplete="off">
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="number" id="age" placeholder="Enter age">
+    <button type="submit">Register</button>
+</form>
+
+<div id="message"></div>
+
+<script>
+    const form = document.getElementById("myForm");
+    const nameInput = document.getElementById("name");
+    const ageInput = document.getElementById("age");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nameValue = nameInput.value.trim();
+        const ageValue = Number(ageInput.value);
+
+        if (nameValue !== "" && ageValue >= 12 && ageValue <= 80) {
+            message.textContent = "Successful registration";
+            message.style.color = "green";
+        } else {
+            message.textContent = "Failed registration";
+            message.style.color = "red";
+        }
+
+    });
+</script>
+
+</body>
+</html>
+-->
